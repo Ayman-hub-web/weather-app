@@ -1,1 +1,108 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+   --blue-1: #3c429E;
+   --blue-2: #4c52AD;
+   --blue-3: #737ada;
+   --yellow-1: #FAC742;
+   --white: #fff;
+   --grey-1: #EDEDED;
+   --shadow-dark: rgba(0,0,0,0.3);
+   --shadow-light: rgba(255,255,255,0.1);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--blue-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    width: 400px;
+    height: 80vh;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px var(--shadow-dark);
+    background-color: var(--blue-2);
+    .upper-data{
+        height: 40vh;
+        img{
+            width: 100%;
+            height: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        .weather-data{
+            position: absolute;
+            top: 30%;
+            color: white;
+            right: 45%;
+            .bigColor{
+                font-size: 50px;
+                font-weight: bolder;
+            }
+        }
+    }
+    .lower-data{
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        h5{
+            color: var(--white);
+        }
+        .round{
+            background-color: var(--blue-3);
+            box-shadow: 10px 10px 10px var(--shadow-light);
+            height: 180px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            .top{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                height: 100px;
+                img{
+                    width: 50px;
+                    height: 40px;
+                    border-radius: 100%;
+                    object-fit: cover;
+                }
+                span{
+                    width: 60px;
+                    color: var(--white);
+                }
+            }
+            .down{
+                bottom: 0px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                height: 100px;
+                img{
+                    width: 50px;
+                    height: 40px;
+                    border-radius: 100%;
+                    object-fit: cover;
+                }
+                span{
+                    width: 60px;
+                    color: var(--white);
+                }
+            }
+        }
+        
+    }
+}
